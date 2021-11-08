@@ -45,6 +45,8 @@ renv::snapshot()
 counts <- Read10X_h5("/Volumes/TUNEZ/Clara/filtered_feature_bc_matrix.h5")
 fragpath <- "/Volumes/TUNEZ/Clara/atac_fragments.tsv.gz"
 
+
+
 # get gene annotations for dm6
 # We will use sitadela to build our own genome annotation object that includes biotype
 buildDir <- file.path(tempdir(),"test_anndb")
