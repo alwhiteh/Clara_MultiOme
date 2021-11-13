@@ -34,11 +34,15 @@ fly_genome <- BSgenome.Dmelanogaster.UCSC.dm6
 library(chromVAR)
 library(Rcpp)
 library(sitadela) #we will use this to get the annotation for Dm6
+library(usethis)
 
 #Renv init
 #renv::init()
 renv::snapshot()
 #renv::restore()
+
+# Create Github Repo
+#usethis::use_github()
 
 # We will follow the Satija Lab vignette on multiomics from 10x: https://satijalab.org/signac/articles/pbmc_multiomic.html
 # Load RNA and ATAC data
